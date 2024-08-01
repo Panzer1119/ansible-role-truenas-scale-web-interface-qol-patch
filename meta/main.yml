@@ -1,0 +1,15 @@
+galaxy_info:
+  role_name: truenas_scale_web_interface_qol_patch
+  author: Panzer1119
+  description: Applies some quality of life improvement patches to the web interface
+  license: Apache-2.0
+  min_ansible_version: 2.1
+  platforms:
+    - name: Debian
+      versions:
+        - all
+  galaxy_tags:
+    - system
+    - web
+    - truenas
+    - qol

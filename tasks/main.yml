@@ -1,0 +1,5 @@
+---
+- name: "Uncolor storage dashboard topology warning icons"
+  include_tasks:
+    file: "uncolor-storage-dashboard-topology-warning-icons.yml"
+  when: "uncolor_storage_dashboard_topology_warning_icons"

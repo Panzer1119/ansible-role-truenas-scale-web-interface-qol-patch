@@ -1,0 +1,8 @@
+---
+- name: "Restart middlewared service"
+  systemd:
+    daemon_reload: yes
+    name: middlewared
+    enabled: yes
+    state: restarted
+  become: yes
