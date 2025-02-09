@@ -1,9 +1,9 @@
 ---
-- name: "Replace a line in 1023.e1b809918b93be2b.js"
+- name: "Replace a line in chunk-YDQ756VG.js"
   ansible.builtin.replace:
-    path: "/usr/share/truenas/webui/1023.e1b809918b93be2b.js"
-    regexp: 'consts\:\[\[1,"card"\],\["mat\-card\-title",""\],\[3,"type","tooltip"\],\["mat\-button","","ixTest","manage\-devices",3,"click"\],\["fxFlex","100"\],\[1,"content\-container"\],\[1,"vdev\-line"\],\[1,"vdev\-stats"\],\["class","warning",3,"matTooltip",4,"ngIf"\],\["class","vdev\-value",4,"ngIf"\],\["class","warning",4,"ngIf"\],\["class","offline\-data\-vdevs",4,"ngIf"\],\["class","vdev\-stats",4,"ngIf","ngIfElse"\],\["class","vdev\-line",4,"ngIf"\],\["notAvailable",""\],\[1,"warning",3,"matTooltip"\],\["name","error",1,"pool\-icon","icon\-warning"\],\[1,"vdev\-value"\],\[1,"warning"\],\[1,"offline\-data\-vdevs"\]\],'
-    replace: 'consts:[[1,"card"],["mat-card-title",""],[3,"type","tooltip"],["mat-button","","ixTest","manage-devices",3,"click"],["fxFlex","100"],[1,"content-container"],[1,"vdev-line"],[1,"vdev-stats"],["class","warning",3,"matTooltip",4,"ngIf"],["class","vdev-value",4,"ngIf"],["class","warning",4,"ngIf"],["class","offline-data-vdevs",4,"ngIf"],["class","vdev-stats",4,"ngIf","ngIfElse"],["class","vdev-line",4,"ngIf"],["notAvailable",""],[1,"",3,"matTooltip"],["name","error",1,"pool-icon","icon-warning"],[1,"vdev-value"],[1,"warning"],[1,"offline-data-vdevs"]],'
+    path: "/usr/share/truenas/webui/chunk-YDQ756VG.js"
+    regexp: ',\[1,"warning",3,"matTooltip"\],\[1,"vdev\-value"\],\["name","error",1,"pool\-icon","icon\-warning"\],\[1,"warning"\],\[1,"offline\-data\-vdevs"\]\],'
+    replace: ',[1,"",3,"matTooltip"],[1,"vdev-value"],["name","error",1,"pool-icon","icon-warning"],[1,"warning"],[1,"offline-data-vdevs"]],'
     backup: true
   become: yes
   notify: "Restart middlewared service"
