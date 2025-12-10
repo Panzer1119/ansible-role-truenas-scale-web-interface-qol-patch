@@ -1,7 +1,7 @@
 ---
-- name: "Replace a line in chunk-YDQ756VG.js"
+- name: "Replace a line in chunk-QODSFJG7.js"
   ansible.builtin.replace:
-    path: "/usr/share/truenas/webui/chunk-YDQ756VG.js"
+    path: "/usr/share/truenas/webui/chunk-QODSFJG7.js"
     regexp: ',\[1,"warning",3,"matTooltip"\],\[1,"vdev\-value"\],\["name","error",1,"pool\-icon","icon\-warning"\],\[1,"warning"\],\[1,"offline\-data\-vdevs"\]\],'
     replace: ',[1,"",3,"matTooltip"],[1,"vdev-value"],["name","error",1,"pool-icon","icon-warning"],[1,"warning"],[1,"offline-data-vdevs"]],'
     backup: true
